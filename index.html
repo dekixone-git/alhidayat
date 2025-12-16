@@ -24,7 +24,7 @@
         </div>
         <div class="text-group-bottom text-center mx-auto mt-4">
           <p>Kepada Bapak/Ibu/Saudara/i</p>
-          <h2 class="fw-bolder text-capitalize" id="receiver"></h2>
+          <h2 class="fw-bolder text-capitalize" id="receiver">Tamu Undangan</h2>
           <p>Tanpa mengurangi rasa hormat, kami mengundang anda untuk hadir pada acara pernikahan kami.</p>
           <button class="btn btn-primary d-flex mx-auto fw-bold mt-5" id="open-message">
             <i data-feather="mail" class="me-2"></i>Buka Undangan
@@ -66,7 +66,7 @@
             </div>
             <div class="nama-pengantin d-flex flex-column align-items-center">
               <h2>Dayat</h2>
-              <h3>Alhidayat Jambak</h3>
+              <h3>Alhidayat Jambak, S.Kom</h3>
               <div class="deskripsi-box text-center">
                 <p>
                   <span class="fw-bold">Putra keempat dari pasangan</span><br />Bapak Harmen Koto <br />&<br />
@@ -210,10 +210,9 @@
                     </span>
                   </p>
                   <a
-  href="https://www.google.com/maps/search/?api=1&query=-3.7842095835778373,102.26367187543437"
+  href="#"
+  onclick="openMaps()"
   class="btn btn-primary rounded-pill fw-bold"
-  target="_blank"
-  rel="noopener"
 >
   MAP LOKASI
 </a>
@@ -502,6 +501,19 @@
       <p class="fw-bolder text-black">Created with <i data-feather="heart"></i> by Deki Studio</p>
     </footer>
     <audio src="assets/music/soundtrack_undangan.mp3"></audio>
+
+
+<script>
+  function openMaps() {
+    const lat = -3.7842095835778373;
+    const lng = 102.26367187543437;
+    const url = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+    window.open(url, "_blank");
+  }
+</script>
+
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
